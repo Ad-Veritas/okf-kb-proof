@@ -4,7 +4,7 @@ title: New Table
 description: New table for okf-check testing.
 ---
 
-The `new` table records one row per update.
+The `new` table records one row per update. Update after PR.
 
 # Schema
 
