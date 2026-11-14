@@ -2,6 +2,7 @@
 type: Dataset
 title: Sales Dataset
 description: A small synthetic sales dataset used to prove SYNC-01 through SYNC-05 against a real git fixture repository.
+status: deprecated
 tags:
 - sales
 - fixture
