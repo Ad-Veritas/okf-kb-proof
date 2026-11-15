@@ -8,7 +8,7 @@ tags:
 ---
 
 The `orders` table records one row per purchase. Each order links to the
-[customers](customers.md) table via `customer_id`.
+[customers](customers.md) table via `customer_id`. Update in proof/shared branch. 
 
 # Schema
 
