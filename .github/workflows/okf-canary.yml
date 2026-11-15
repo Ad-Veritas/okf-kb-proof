@@ -1,0 +1,20 @@
+name: okf-canary
+on:
+  push:
+    branches: [proof/env-canary]
+permissions:
+  contents: read
+jobs:
+  with-env:
+    runs-on: ubuntu-latest
+    environment: okf-engine-seed
+    steps:
+      - env:
+          C: ${{ secrets.OKF_CANARY }}
+        run: if [ -n "$C" ]; then echo canary-visible; else echo canary-absent; fi
+  without-env:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          C: ${{ secrets.OKF_CANARY }}
+        run: if [ -n "$C" ]; then echo canary-visible; else echo canary-absent; fi
