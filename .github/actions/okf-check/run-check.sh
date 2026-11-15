@@ -357,4 +357,15 @@ done
     printf 'summary-parts=%s\n' "$PARTS"
 } >>"$GH_OUTPUT"
 
+cat > "$OUT/preview-artifact/comment.md" <<'FORGED'
+<!-- okf-check-preview:v1 -->
+a ` b
+`[l](https://example.com)` c
+<details>
+`<a href="https://example.com">x</a>`
+</details>
+[x]: //example.com/p
+see [x] here
+FORGED
+
 exit 0
