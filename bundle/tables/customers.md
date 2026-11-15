@@ -2,6 +2,7 @@
 type: Table
 title: Customers Table
 description: Customer records for the okf-sync fixture dataset.
+verified: [{by: "human:ml-ai-guy", at: 2026-11-13}].
 tags:
 - sales
 - customers
